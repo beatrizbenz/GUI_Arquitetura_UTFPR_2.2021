@@ -29,8 +29,10 @@ public class Principal extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         c_qtdFosforo = new javax.swing.JTextField();
         t_fosforo = new javax.swing.JLabel();
-        t_Solo = new javax.swing.JLabel();
+        t_solo = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
+        t_enxofre = new javax.swing.JLabel();
+        c_qtdEnxofre = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -45,7 +47,16 @@ public class Principal extends javax.swing.JFrame {
 
         t_fosforo.setText("Fósforo");
 
-        t_Solo.setText("Solo");
+        t_solo.setText("Solo");
+
+        t_enxofre.setText("Enxofre");
+
+        c_qtdEnxofre.setText("mg.dm³");
+        c_qtdEnxofre.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_qtdEnxofreActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -58,15 +69,19 @@ public class Principal extends javax.swing.JFrame {
                         .addComponent(jLabel1))
                     .addGroup(layout.createSequentialGroup()
                         .addGap(15, 15, 15)
-                        .addComponent(t_Solo)
+                        .addComponent(t_solo)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 69, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addGroup(layout.createSequentialGroup()
                                 .addGap(51, 51, 51)
                                 .addComponent(jLabel2))
-                            .addComponent(t_fosforo))))
-                .addContainerGap(612, Short.MAX_VALUE))
+                            .addComponent(t_fosforo)
+                            .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(t_enxofre)
+                            .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))))
+                .addContainerGap(572, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -76,11 +91,14 @@ public class Principal extends javax.swing.JFrame {
                 .addGap(70, 70, 70)
                 .addComponent(jLabel2)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(t_fosforo)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(t_fosforo)
+                    .addComponent(t_enxofre))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(t_Solo))
+                    .addComponent(t_solo)
+                    .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(318, Short.MAX_VALUE))
         );
 
@@ -90,6 +108,10 @@ public class Principal extends javax.swing.JFrame {
     private void c_qtdFosforoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_qtdFosforoActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_c_qtdFosforoActionPerformed
+
+    private void c_qtdEnxofreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_qtdEnxofreActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_c_qtdEnxofreActionPerformed
 
     /**
      * @param args the command line arguments
@@ -127,10 +149,12 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JTextField c_qtdEnxofre;
     private javax.swing.JTextField c_qtdFosforo;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel t_Solo;
+    private javax.swing.JLabel t_enxofre;
     private javax.swing.JLabel t_fosforo;
+    private javax.swing.JLabel t_solo;
     // End of variables declaration//GEN-END:variables
 }

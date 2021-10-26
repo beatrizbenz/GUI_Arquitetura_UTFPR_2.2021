@@ -31,19 +31,24 @@
                   </Group>
                   <Group type="102" alignment="0" attributes="0">
                       <EmptySpace min="-2" pref="15" max="-2" attributes="0"/>
-                      <Component id="t_Solo" min="-2" max="-2" attributes="0"/>
+                      <Component id="t_solo" min="-2" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Group type="103" groupAlignment="0" attributes="0">
-                          <Component id="c_qtdFosforo" min="-2" pref="69" max="-2" attributes="0"/>
                           <Group type="102" alignment="0" attributes="0">
                               <EmptySpace min="-2" pref="51" max="-2" attributes="0"/>
                               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Component id="t_fosforo" alignment="0" min="-2" max="-2" attributes="0"/>
+                          <Component id="c_qtdFosforo" alignment="0" min="-2" pref="51" max="-2" attributes="0"/>
+                      </Group>
+                      <EmptySpace type="unrelated" max="-2" attributes="0"/>
+                      <Group type="103" groupAlignment="0" attributes="0">
+                          <Component id="t_enxofre" min="-2" max="-2" attributes="0"/>
+                          <Component id="c_qtdEnxofre" min="-2" pref="51" max="-2" attributes="0"/>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="612" max="32767" attributes="0"/>
+              <EmptySpace pref="572" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -55,11 +60,15 @@
               <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
               <Component id="jLabel2" min="-2" max="-2" attributes="0"/>
               <EmptySpace max="-2" attributes="0"/>
-              <Component id="t_fosforo" min="-2" max="-2" attributes="0"/>
+              <Group type="103" groupAlignment="3" attributes="0">
+                  <Component id="t_fosforo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="t_enxofre" alignment="3" min="-2" max="-2" attributes="0"/>
+              </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
                   <Component id="c_qtdFosforo" alignment="3" min="-2" max="-2" attributes="0"/>
-                  <Component id="t_Solo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="t_solo" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="c_qtdEnxofre" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="318" max="32767" attributes="0"/>
           </Group>
@@ -85,12 +94,25 @@
         <Property name="text" type="java.lang.String" value="F&#xf3;sforo"/>
       </Properties>
     </Component>
-    <Component class="javax.swing.JLabel" name="t_Solo">
+    <Component class="javax.swing.JLabel" name="t_solo">
       <Properties>
         <Property name="text" type="java.lang.String" value="Solo"/>
       </Properties>
     </Component>
     <Component class="javax.swing.JLabel" name="jLabel2">
+    </Component>
+    <Component class="javax.swing.JLabel" name="t_enxofre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Enxofre"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="c_qtdEnxofre">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="mg.dm&#xb3;"/>
+      </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="c_qtdEnxofreActionPerformed"/>
+      </Events>
     </Component>
   </SubComponents>
 </Form>
