@@ -52,16 +52,20 @@
                               <Component id="t_aluminio" min="-2" max="-2" attributes="0"/>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
                               <Component id="t_potassio" min="-2" max="-2" attributes="0"/>
+                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                              <Component id="t_calcio" min="-2" max="-2" attributes="0"/>
                           </Group>
                           <Group type="102" attributes="0">
                               <Component id="c_qtdAluminio" min="-2" pref="50" max="-2" attributes="0"/>
                               <EmptySpace max="-2" attributes="0"/>
                               <Component id="c_qtdPotassio" min="-2" pref="51" max="-2" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                              <Component id="c_qtdCalcio" min="-2" pref="51" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                   </Group>
               </Group>
-              <EmptySpace pref="459" max="32767" attributes="0"/>
+              <EmptySpace pref="402" max="32767" attributes="0"/>
           </Group>
       </Group>
     </DimensionLayout>
@@ -78,6 +82,7 @@
                   <Component id="t_enxofre" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="t_aluminio" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="t_potassio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="t_calcio" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace max="-2" attributes="0"/>
               <Group type="103" groupAlignment="3" attributes="0">
@@ -86,6 +91,7 @@
                   <Component id="c_qtdEnxofre" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="c_qtdAluminio" alignment="3" min="-2" max="-2" attributes="0"/>
                   <Component id="c_qtdPotassio" alignment="3" min="-2" max="-2" attributes="0"/>
+                  <Component id="c_qtdCalcio" alignment="3" min="-2" max="-2" attributes="0"/>
               </Group>
               <EmptySpace pref="318" max="32767" attributes="0"/>
           </Group>
@@ -144,6 +150,16 @@
       </Properties>
     </Component>
     <Component class="javax.swing.JTextField" name="c_qtdPotassio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="Cmol"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JLabel" name="t_calcio">
+      <Properties>
+        <Property name="text" type="java.lang.String" value="C&#xe1;lcio"/>
+      </Properties>
+    </Component>
+    <Component class="javax.swing.JTextField" name="c_qtdCalcio">
       <Properties>
         <Property name="text" type="java.lang.String" value="Cmol"/>
       </Properties>
