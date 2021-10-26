@@ -35,6 +35,8 @@ public class Principal extends javax.swing.JFrame {
         c_qtdEnxofre = new javax.swing.JTextField();
         t_aluminio = new javax.swing.JLabel();
         c_qtdAluminio = new javax.swing.JTextField();
+        t_potassio = new javax.swing.JLabel();
+        c_qtdPotassio = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -62,6 +64,10 @@ public class Principal extends javax.swing.JFrame {
 
         t_aluminio.setText("Aluminio");
 
+        t_potassio.setText("Potássio");
+
+        c_qtdPotassio.setText("Cmol");
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -87,9 +93,15 @@ public class Principal extends javax.swing.JFrame {
                             .addComponent(t_enxofre))
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(t_aluminio)
-                            .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addContainerGap(516, Short.MAX_VALUE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(t_aluminio)
+                                .addGap(18, 18, 18)
+                                .addComponent(t_potassio))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c_qtdPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(459, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -102,13 +114,15 @@ public class Principal extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(t_fosforo)
                     .addComponent(t_enxofre)
-                    .addComponent(t_aluminio))
+                    .addComponent(t_aluminio)
+                    .addComponent(t_potassio))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(t_solo)
                     .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(c_qtdPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(318, Short.MAX_VALUE))
         );
 
@@ -162,11 +176,13 @@ public class Principal extends javax.swing.JFrame {
     private javax.swing.JTextField c_qtdAluminio;
     private javax.swing.JTextField c_qtdEnxofre;
     private javax.swing.JTextField c_qtdFosforo;
+    private javax.swing.JTextField c_qtdPotassio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel t_aluminio;
     private javax.swing.JLabel t_enxofre;
     private javax.swing.JLabel t_fosforo;
+    private javax.swing.JLabel t_potassio;
     private javax.swing.JLabel t_solo;
     // End of variables declaration//GEN-END:variables
 }
