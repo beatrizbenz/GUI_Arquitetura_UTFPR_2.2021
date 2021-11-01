@@ -26,6 +26,8 @@ public class Principal extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        buttonGroup1 = new javax.swing.ButtonGroup();
+        buttonGroup2 = new javax.swing.ButtonGroup();
         jLabel1 = new javax.swing.JLabel();
         c_qtdFosforo = new javax.swing.JTextField();
         t_fosforo = new javax.swing.JLabel();
@@ -39,6 +41,14 @@ public class Principal extends javax.swing.JFrame {
         c_qtdPotassio = new javax.swing.JTextField();
         t_calcio = new javax.swing.JLabel();
         c_qtdCalcio = new javax.swing.JTextField();
+        t_magnesio = new javax.swing.JLabel();
+        c_qtdmagnesio = new javax.swing.JTextField();
+        op_texturadosolo_argiloso = new javax.swing.JRadioButton();
+        op_texturadosolo_media = new javax.swing.JRadioButton();
+        t_textura_solo = new javax.swing.JLabel();
+        op_sistemadecultivo_plantiodireto = new javax.swing.JRadioButton();
+        t_sistema_cultivo = new javax.swing.JLabel();
+        op_sistemadecultivo_plantioconvencional = new javax.swing.JRadioButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -73,6 +83,41 @@ public class Principal extends javax.swing.JFrame {
         t_calcio.setText("Cálcio");
 
         c_qtdCalcio.setText("Cmol");
+        c_qtdCalcio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_qtdCalcioActionPerformed(evt);
+            }
+        });
+
+        t_magnesio.setText("Magnésio");
+
+        c_qtdmagnesio.setText("Cmol");
+        c_qtdmagnesio.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                c_qtdmagnesioActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(op_texturadosolo_argiloso);
+        op_texturadosolo_argiloso.setText("Argiloso");
+        op_texturadosolo_argiloso.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                op_texturadosolo_argilosoActionPerformed(evt);
+            }
+        });
+
+        buttonGroup1.add(op_texturadosolo_media);
+        op_texturadosolo_media.setText("Média");
+
+        t_textura_solo.setText("Textura do Solo");
+
+        buttonGroup2.add(op_sistemadecultivo_plantiodireto);
+        op_sistemadecultivo_plantiodireto.setText("Plantio Direto");
+
+        t_sistema_cultivo.setText("Sistema de Cultivo");
+
+        buttonGroup2.add(op_sistemadecultivo_plantioconvencional);
+        op_sistemadecultivo_plantioconvencional.setText("Plantio Convencional");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -81,61 +126,109 @@ public class Principal extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(42, 42, 42)
-                        .addComponent(jLabel1))
+                        .addGap(92, 92, 92)
+                        .addComponent(jLabel2))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(t_solo)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addGap(238, 238, 238)
+                        .addComponent(jLabel1))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
-                                .addGap(51, 51, 51)
-                                .addComponent(jLabel2))
-                            .addComponent(t_fosforo)
-                            .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(t_enxofre))
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGap(78, 78, 78)
+                                .addComponent(t_sistema_cultivo))
                             .addGroup(layout.createSequentialGroup()
-                                .addComponent(t_aluminio)
-                                .addGap(18, 18, 18)
-                                .addComponent(t_potassio)
-                                .addGap(18, 18, 18)
-                                .addComponent(t_calcio))
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGap(16, 16, 16)
+                                .addComponent(op_sistemadecultivo_plantiodireto)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(op_sistemadecultivo_plantioconvencional)))
+                        .addGroup(layout.createSequentialGroup()
+                            .addGap(46, 46, 46)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(16, 16, 16)
+                                    .addComponent(op_texturadosolo_media)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(op_texturadosolo_argiloso))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addComponent(t_solo)
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addGroup(layout.createSequentialGroup()
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(t_aluminio)
+                                                .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                            .addGap(18, 18, 18)
+                                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                                .addComponent(c_qtdCalcio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                                .addComponent(t_calcio)))
+                                        .addComponent(t_textura_solo))))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(t_enxofre))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(t_fosforo)
+                                .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addComponent(t_magnesio)
+                                .addComponent(c_qtdmagnesio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGap(18, 18, 18)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                                 .addComponent(c_qtdPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(c_qtdCalcio, javax.swing.GroupLayout.PREFERRED_SIZE, 51, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                .addContainerGap(402, Short.MAX_VALUE))
+                                .addComponent(t_potassio)))))
+                .addContainerGap(42, Short.MAX_VALUE))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(39, 39, 39)
+                .addGap(33, 33, 33)
                 .addComponent(jLabel1)
-                .addGap(70, 70, 70)
-                .addComponent(jLabel2)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(t_fosforo)
-                    .addComponent(t_enxofre)
-                    .addComponent(t_aluminio)
-                    .addComponent(t_potassio)
-                    .addComponent(t_calcio))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(t_solo)
-                    .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c_qtdPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(c_qtdCalcio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(318, Short.MAX_VALUE))
+                .addGap(12, 12, 12)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(t_potassio)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(c_qtdPotassio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                        .addComponent(t_aluminio)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(t_calcio)
+                                    .addComponent(t_enxofre))
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                    .addComponent(c_qtdCalcio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(c_qtdEnxofre, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                                .addComponent(c_qtdAluminio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addComponent(t_solo))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(t_fosforo)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c_qtdFosforo, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addComponent(t_magnesio)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                                .addComponent(c_qtdmagnesio, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addGap(6, 6, 6)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addComponent(jLabel2)
+                        .addGap(29, 29, 29)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(t_sistema_cultivo)
+                            .addComponent(t_textura_solo, javax.swing.GroupLayout.PREFERRED_SIZE, 14, javax.swing.GroupLayout.PREFERRED_SIZE))
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(op_sistemadecultivo_plantiodireto)
+                            .addComponent(op_sistemadecultivo_plantioconvencional)))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                        .addComponent(op_texturadosolo_argiloso)
+                        .addComponent(op_texturadosolo_media)))
+                .addContainerGap(327, Short.MAX_VALUE))
         );
 
         pack();
@@ -148,6 +241,18 @@ public class Principal extends javax.swing.JFrame {
     private void c_qtdEnxofreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_qtdEnxofreActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_c_qtdEnxofreActionPerformed
+
+    private void c_qtdmagnesioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_qtdmagnesioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_c_qtdmagnesioActionPerformed
+
+    private void c_qtdCalcioActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_qtdCalcioActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_c_qtdCalcioActionPerformed
+
+    private void op_texturadosolo_argilosoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_op_texturadosolo_argilosoActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_op_texturadosolo_argilosoActionPerformed
 
     /**
      * @param args the command line arguments
@@ -185,18 +290,28 @@ public class Principal extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.ButtonGroup buttonGroup1;
+    private javax.swing.ButtonGroup buttonGroup2;
     private javax.swing.JTextField c_qtdAluminio;
     private javax.swing.JTextField c_qtdCalcio;
     private javax.swing.JTextField c_qtdEnxofre;
     private javax.swing.JTextField c_qtdFosforo;
     private javax.swing.JTextField c_qtdPotassio;
+    private javax.swing.JTextField c_qtdmagnesio;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
+    private javax.swing.JRadioButton op_sistemadecultivo_plantioconvencional;
+    private javax.swing.JRadioButton op_sistemadecultivo_plantiodireto;
+    private javax.swing.JRadioButton op_texturadosolo_argiloso;
+    private javax.swing.JRadioButton op_texturadosolo_media;
     private javax.swing.JLabel t_aluminio;
     private javax.swing.JLabel t_calcio;
     private javax.swing.JLabel t_enxofre;
     private javax.swing.JLabel t_fosforo;
+    private javax.swing.JLabel t_magnesio;
     private javax.swing.JLabel t_potassio;
+    private javax.swing.JLabel t_sistema_cultivo;
     private javax.swing.JLabel t_solo;
+    private javax.swing.JLabel t_textura_solo;
     // End of variables declaration//GEN-END:variables
 }
